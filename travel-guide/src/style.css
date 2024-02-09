@@ -1,0 +1,49 @@
+/* {START} From component => Navbar */
+.navbar-top {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow size and color */
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* {END} From component => Navbar */
+
+/* ....................................................................................... */
+
+/* {START} From component => Search */
+.info-box {
+  border: 2px solid #ddd;
+  border-radius: 2%;
+  padding: 20px;
+  margin: 25px;
+  transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+  background-color: rgb(227, 228, 224);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow size and color */
+  transform: scale(1.1);
+}
+/* {END} From component => Search */
+
+/* ....................................................................................... */
+
+/* {START} From component => FindTour */
+@media (max-width: 768px) {
+  .findTour {
+    margin: 20px;
+  }
+}
+/* {END} From component => FindTour */
+
+/* ....................................................................................... */
+
+/* {START} From component => Navbar */
+/* {END} From component => Navbar */
+
+/* ....................................................................................... */
+
+/* {START} From component => Navbar */
+/* {END} From component => Navbar */
