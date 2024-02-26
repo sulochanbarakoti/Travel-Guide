@@ -12,7 +12,7 @@
 
 /* ....................................................................................... */
 
-/* {START} From component => Search */
+/* {START} From component => Info */
 .info-box {
   border: 2px solid #ddd;
   border-radius: 2%;
@@ -26,24 +26,76 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow size and color */
   transform: scale(1.1);
 }
-/* {END} From component => Search */
+
+#search-bar {
+  background-color: rgb(235, 243, 240) !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* {END} From component => Info */
 
 /* ....................................................................................... */
 
 /* {START} From component => FindTour */
-@media (max-width: 768px) {
-  .findTour {
-    margin: 20px;
-  }
+.tour-img {
+  opacity: 0.9;
+}
+
+.tour-img:hover {
+  opacity: 1;
 }
 /* {END} From component => FindTour */
 
 /* ....................................................................................... */
 
-/* {START} From component => Navbar */
-/* {END} From component => Navbar */
+/* {START} From component => Slider component */
+/* #slider-container {
+  height: 60% !important;
+} */
+
+/* {END} From component => Slider component */
 
 /* ....................................................................................... */
 
-/* {START} From component => Navbar */
-/* {END} From component => Navbar */
+/* {START} From component => Search component */
+/* #search-container {
+  position: absolute;
+  left: 10%;
+  top: 110%;
+  right: 10%;
+  width: "100%";
+  z-index: 1;
+}
+@media (max-width: 1500px) {
+  #search-container {
+    position: relative;
+    left: 0;
+    top: auto;
+    
+    right: 0;
+  }
+}
+@media (max-width: 767px) {
+  #search-container {
+    position: relative;
+    left: 0;
+    top: auto;
+    right: 0;
+  }
+} */
+
+/* {END} From component => Search component */
+
+/* ....................................................................................... */
+
+/* {START} From component => Slider */
+/* {END} From component => Slider */
+
+/* ....................................................................................... */
+
+/* {START} From component => Slider */
+/* {END} From component => Slider */
+
+/* ....................................................................................... */
+
+/* {START} From component => Slider */
+/* {END} From component => Slider */

@@ -1,46 +1,56 @@
-import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { FaPlaneArrival } from "react-icons/fa";
-import { IoCalendarSharp } from "react-icons/io5";
-import { BiTrip } from "react-icons/bi";
+import React, { useState } from "react";
+import {
+  Col,
+  Container,
+  Form,
+  Row,
+  InputGroup,
+  Button,
+  DropdownButton,
+  Dropdown,
+} from "react-bootstrap";
+
+import { Typeahead } from "react-bootstrap-typeahead";
+import "react-bootstrap-typeahead/css/Typeahead.css";
+import { activities, searchData } from "../data";
 
 const Search = () => {
+  const [activity, setActivity] = useState("");
   return (
-    <Row>
-      <Col>
-        <div className="info-box">
-          <FaPlaneArrival size={50} color="green" />
-          <h4>Pick Destination</h4>
-          <div>
-            We are specialized in Trekking, Touring, Climbing adventure
-            activities of Nepal. We also organaize Tibet and Bhutan tours. Where
-            do you want to travel?
-          </div>
+    <Container id="search-container">
+      <Row className="p-4">
+        <div id="search-bar" className="p-1 bg-white rounded">
+          <Form className="d-flex flex-column flex-md-row p-1">
+            <Typeahead
+              id="autocomplete-search"
+              placeholder="Search activities..."
+              className="m-1 w-100"
+              options={searchData}
+            />
+            <InputGroup className="m-1" style={{ width: "auto" }}>
+              <DropdownButton
+                variant="outline-secondary"
+                title={!activity ? "Choose the activities" : activity}
+              >
+                {activities.map((activity, index) => (
+                  <Dropdown.Item
+                    key={index}
+                    onClick={() => setActivity(activity.name)}
+                  >
+                    {activity.name}
+                  </Dropdown.Item>
+                ))}
+              </DropdownButton>
+            </InputGroup>
+            {/* <Link to="/search"> */}
+            <Button className="m-1" style={{ width: "60%" }} variant="success">
+              Search
+            </Button>
+            {/* </Link> */}
+          </Form>
         </div>
-      </Col>
-      <Col xs={12} md={4}>
-        <div className="info-box">
-          <IoCalendarSharp size={50} color="green" />
-          <h4>Select Date</h4>
-          <div>
-            Let us know your travel date with your tour details, we will help
-            you to pick a best time and months so that you will have your trip
-            lifetime memorable.
-          </div>
-        </div>
-      </Col>
-      <Col>
-        <div className="info-box">
-          <BiTrip size={50} color="green" />
-          <h4>Book Your Trip</h4>
-          <div>
-            Booking procedure with Great Adventure Treks is easy. You can make
-            direct payment trough the trip url. We 30% - 40% take booking fee of
-            package price.
-          </div>
-        </div>
-      </Col>
-    </Row>
+      </Row>
+    </Container>
   );
 };
 

@@ -1,108 +1,54 @@
 import React from "react";
-import { Col, Container, Row, Image, Button } from "react-bootstrap";
-import { treking } from "../asset/logic";
+import { Col, Container, Row, Image, Button, Card } from "react-bootstrap";
+import { trekingHimalayan, trekingCloud, elephantSafari } from "../asset/logic";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const FindTour = () => {
-  var settings = {
-    centerMode: true,
-    centerPadding: "220px",
-    arrows: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: "20px",
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: "20px",
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        },
-      },
-    ],
-  };
   return (
     <Container className="findTour">
-      <Row>
+      <Row className="p-3">
         <Col>
           <div className="text-start">
             <h5>Plan your trip to Nepal</h5>
             <h2 className="fw-bold">Where to next?</h2>
           </div>
-          <div className="text-end mb-3">
-            <Button variant="success">View all Destination</Button>
+          <div className="text-end">
+            <Button variant="outline-success">View all Destination</Button>
           </div>
         </Col>
       </Row>
-      <Row className="d-flex">
-        {/* <Col xs={12} md={4}>
-          <div className="image">
-            <Image
-              style={{ height: "300px", width: "300px" }}
-              src={elephantSafari}
-              rounded
+      <Row className="p-3">
+        <Col xs={12} md={4}>
+          <Card className="findtour-card">
+            <Card.Img
+              src={trekingHimalayan}
+              className="tour-img"
+              alt="Nepal Trekking"
             />
-          </div>
-        </Col> */}
-        <Col>
-          <Slider {...settings}>
-            <div>
-              <Image
-                style={{ height: "300px", width: "300px" }}
-                src={treking}
-                rounded
-              />
-              <h5 className="mt-2 fw-bold">Everest Base Camp Trek</h5>
-            </div>
-            <div>
-              <Image
-                style={{ height: "300px", width: "300px" }}
-                src={treking}
-                rounded
-              />
-            </div>
-            <div>
-              <Image
-                style={{ height: "300px", width: "300px" }}
-                src={treking}
-                rounded
-              />
-            </div>
-            <div>
-              <Image
-                style={{ height: "300px", width: "300px" }}
-                src={treking}
-                rounded
-              />
-            </div>
-            <div>
-              <Image
-                style={{ height: "300px", width: "300px" }}
-                src={treking}
-                rounded
-              />
-            </div>
-          </Slider>
+          </Card>
+          <div className="fw-bold p-2">Himalayan Trek</div>
+        </Col>
+        <Col xs={12} md={4}>
+          <Card className="findtour-card">
+            <Card.Img
+              src={trekingCloud}
+              className="tour-img"
+              alt="Nepal Trekking"
+            />
+          </Card>
+          <div className="fw-bold p-2">Trekking above cloud</div>
+        </Col>
+        <Col xs={12} md={4}>
+          <Card className="findtour-card">
+            <Card.Img
+              src={elephantSafari}
+              className="tour-img"
+              alt="Nepal Trekking"
+            />
+          </Card>
+          <div className="fw-bold p-2">Elephant Safari in Chitwan</div>
         </Col>
       </Row>
     </Container>
