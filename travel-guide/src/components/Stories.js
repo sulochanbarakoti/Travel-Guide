@@ -1,8 +1,12 @@
 import React from "react";
 import { Button, Col, Container, Row, Image } from "react-bootstrap";
-import { elephantSafari } from "../asset/logic";
+// import { elephantSafari } from "../asset/logic";
+import { chitwan, kathmandu, pokhara, everest } from "../asset/logic";
+
+import { stories } from "../data";
 
 const Stories = () => {
+  console.log(stories);
   return (
     <Container>
       <Row className="fw-bold">
@@ -19,9 +23,9 @@ const Stories = () => {
       </Row>
       <Row>
         <Col>
-          <Image src={elephantSafari} thumbnail />
-          <div>
-            <div>ACTIVITIES</div>
+          <Image className="story-thumb-img" src={kathmandu} thumbnail />
+          <div className="story-thumb-text">
+            <div></div>
             <div>18 of the best free things to do in Sauraha</div>
           </div>
         </Col>

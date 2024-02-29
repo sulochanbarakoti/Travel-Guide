@@ -47,12 +47,23 @@
 
 /* ....................................................................................... */
 
-/* {START} From component => Slider component */
-/* #slider-container {
-  height: 60% !important;
-} */
+/* {START} From component => Stories component */
+.story-thumb-img {
+  opacity: 0.8;
+  position: relative;
+}
 
-/* {END} From component => Slider component */
+.story-thumb-img:hover {
+  opacity: 1;
+}
+
+.story-thumb-text {
+  position: absolute;
+  top: 50;
+  left: 50;
+}
+
+/* {END} From component => Stories component */
 
 /* ....................................................................................... */
 

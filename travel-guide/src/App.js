@@ -15,6 +15,7 @@ const App = () => {
             path="/destination"
             element={<Destination></Destination>}
           ></Route>
+          {/* <Route path="/blog" element={Sto} /> */}
         </Routes>
       </BrowserRouter>
     </div>
