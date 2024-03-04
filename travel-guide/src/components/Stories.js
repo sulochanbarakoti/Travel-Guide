@@ -21,7 +21,7 @@ const Stories = () => {
 
   // Selecting four random objects from the array
   const randomObjects = Array.from(
-    { length: 4 },
+    { length: 3 },
     () => stories[getRandomNumber(0, stories.length)]
   );
   return (
@@ -38,11 +38,15 @@ const Stories = () => {
           <Button variant="outline-success">Read more articles</Button>
         </Col>
       </Row>
-      <Row className="mt-3">
-        <Col>
+      <Row className="mt-3 g-3">
+        {/* <Col>
           <CardGroup>
             <Card className="bg-dark text-white">
-              <Card.Img src={chitwan} alt="Chitwan National Park" />
+              <Card.Img
+                variant="top"
+                src={chitwan}
+                alt="Chitwan National Park"
+              />
               <Card.ImgOverlay>
                 <Card.Title>Chitwan National Park</Card.Title>
                 <Card.Text>
@@ -53,22 +57,22 @@ const Stories = () => {
               </Card.ImgOverlay>
             </Card>
           </CardGroup>
-        </Col>
-        <Col>
-          <Row xs={1} md={2} className="g-2">
-            {randomObjects.map((item) => (
-              <Col key={item.id}>
-                <Card className="bg-dark text-white">
-                  <Card.Img src={item.image} alt="Chitwan National Park" />
-                  <Card.ImgOverlay>
-                    <Card.Title>{item.title}</Card.Title>
-                    <Card.Text>{item.description}</Card.Text>
-                  </Card.ImgOverlay>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-        </Col>
+        </Col> */}
+        {/* <Col> */}
+        {/* <Row className="g-2"> */}
+        {randomObjects.map((item) => (
+          <Col xs={12} md={4} key={item.id}>
+            <Card>
+              <Card.Img src={item.image} alt="Chitwan National Park" />
+              <Card.Body>
+                <Card.Title>{item.title}</Card.Title>
+                {/* <Card.Text>{item.description}</Card.Text> */}
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+        {/* </Row> */}
+        {/* </Col> */}
       </Row>
     </Container>
   );

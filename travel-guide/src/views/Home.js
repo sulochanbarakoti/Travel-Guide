@@ -5,6 +5,7 @@ import Search from "../components/Search";
 import FindTour from "../components/FindTour";
 import Info from "../components/Info";
 import Stories from "../components/Stories";
+import Blog from "../components/Blog";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Info />
       <FindTour />
       <Stories />
+      {/* <Blog /> */}
     </>
   );
 };
