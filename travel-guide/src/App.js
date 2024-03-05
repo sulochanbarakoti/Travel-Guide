@@ -4,6 +4,7 @@ import Home from "./views/Home";
 import Destination from "./views/Destination";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
+import Blog from "./components/Blog";
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
             path="/destination"
             element={<Destination></Destination>}
           ></Route>
-          {/* <Route path="/blog" element={Sto} /> */}
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </BrowserRouter>
     </div>

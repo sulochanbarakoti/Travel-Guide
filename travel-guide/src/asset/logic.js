@@ -8,6 +8,7 @@ import chitwan from "./chitwan.jpg";
 import kathmandu from "./kathmandu.jpg";
 import everest from "./everest-b-c.jpg";
 import pokhara from "./pokhera.jpg";
+import lumbini from "./lumbini.png";
 
 export {
   trekingHimalayan,
@@ -20,4 +21,5 @@ export {
   kathmandu,
   everest,
   pokhara,
+  lumbini,
 };

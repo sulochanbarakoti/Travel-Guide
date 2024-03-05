@@ -1,4 +1,4 @@
-import { chitwan, kathmandu, pokhara, everest } from "./asset/logic";
+import { chitwan, kathmandu, pokhara, everest, lumbini } from "./asset/logic";
 
 export const activities = [
   {
@@ -58,5 +58,36 @@ export const stories = [
       "Chitwan National Park is a haven for wildlife enthusiasts, home to a diverse range of flora and fauna, including endangered species such as the Bengal tiger and one-horned rhinoceros. Visitors can enjoy jungle safaris, birdwatching, and cultural experiences with the indigenous Tharu community.",
     image: chitwan,
     date: "2023-11-05",
+  },
+];
+
+export const Trip = [
+  {
+    tripId: 1,
+    tripName: "Buddhist Tour In Nepal",
+    image: lumbini,
+    days: 8,
+    tripDetails: {
+      accomodation: "Hotel/Lodge",
+      arrivalCity: "Kathmandu",
+      bestSeason: "Spring and Autumn",
+      guide: "Guided Tour",
+      maximumAltitude: "2,195 meters (7,201 feet)",
+      meals: "BLD",
+      transportation: "Private/Public Vehicle",
+      wifi: "Available",
+    },
+    overview:
+      "Nepal being the birthplace of Gautam Buddha, is very revered among Buddhists. It houses a myriad number of Buddhist pilgrimage sites. If you are to visit Nepal, you cannot miss visiting these significant sites. They are scattered around various geographical regions of Nepal. We at Great Adventure Treks have several packages aimed at Buddhist pilgrimage tours. On this package of Buddhist tour in Nepal, we propose a tour in and around Kathmandu valley along with a tour to Lumbini. It will be an 8-day long trip around major Buddhist attraction sites. We will kick off our tour from Kathmandu by visiting the attraction sites within the valley. After that, we then head towards Pharping and its vicinity to visit its pilgrimages. We also have places like Patan, Bhaktapur, and the famous Manjushree Park as our destinations. On one of the days of the tour, our overnight stop will be Nagarkot. We will visit Namobuddha and Panauti on the outskirts of town. They are a must-visit site among significant Buddhist attraction sites. After that, we will head to the birthplace of Buddha, Lumbini. A short tour of pilgrimage sites in Lumbini, and then we return to Kathmandu and mark the end of the trip. The trip will be brief and very suitable for a short family gateway. You need not put much physical effort or plan your itineraries as we do it for you. Just book your package and enjoy the cultural and religious adventure that this tour has in store for you",
+    itinerary: {
+      day1: "Visit Swayambhunath, Kathmandu Durbar Square, and nearby Buddhist viharas",
+      day2: "Baudhanath & Bajrayogini (Sankhu)",
+      day3: "Pharping, Yangleshor, Asura cave, Bajrayogini",
+      day4: "Bhaktapur or Patan, Manjushree cave Overnight Nagarkot",
+      day5: "Namobuddha, Panauti",
+      day6: "Kathmandu to Lumbini",
+      day7: "Lumbini / Kapilvastu / Taulihawa / Ram Gram",
+      day8: "Lumbini to Kathmandu",
+    },
   },
 ];
