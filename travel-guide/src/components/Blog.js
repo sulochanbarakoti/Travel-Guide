@@ -39,9 +39,6 @@ const Blog = () => {
       findById(id);
     }
   }, [tripData]);
-  // setTripData(oneTrip);
-  console.log(tripData);
-  console.log(id);
   return (
     tripData && (
       <>

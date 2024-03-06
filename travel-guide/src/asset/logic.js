@@ -9,6 +9,8 @@ import kathmandu from "./kathmandu.jpg";
 import everest from "./everest-b-c.jpg";
 import pokhara from "./pokhera.jpg";
 import lumbini from "./lumbini.png";
+import helicopter from "./helicopter-tour.png";
+import labuche from "./labuche.png";
 
 export {
   trekingHimalayan,
@@ -22,4 +24,6 @@ export {
   everest,
   pokhara,
   lumbini,
+  helicopter,
+  labuche,
 };

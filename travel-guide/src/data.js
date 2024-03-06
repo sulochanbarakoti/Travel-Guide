@@ -1,4 +1,12 @@
-import { chitwan, kathmandu, pokhara, everest, lumbini } from "./asset/logic";
+import {
+  chitwan,
+  kathmandu,
+  pokhara,
+  everest,
+  lumbini,
+  helicopter,
+  labuche,
+} from "./asset/logic";
 
 export const activities = [
   {
@@ -103,8 +111,8 @@ export const Trip = [
   {
     tripId: 2,
     tripName: "Everest Base Camp Helicopter tour",
-    image: lumbini,
-    days: 8,
+    image: helicopter,
+    days: 1,
     tripDetails: {
       accomodation: "Hotel/Lodge",
       arrivalCity: "Kathmandu",
@@ -116,9 +124,9 @@ export const Trip = [
       wifi: "Available",
     },
     overview: [
-      "Nepal being the birthplace of Gautam Buddha, is very revered among Buddhists. It houses a myriad number of Buddhist pilgrimage sites. If you are to visit Nepal, you cannot miss visiting these significant sites. They are scattered around various geographical regions of Nepal. We at Great Adventure Treks have several packages aimed at Buddhist pilgrimage tours. On this package of Buddhist tour in Nepal, we propose a tour in and around Kathmandu valley along with a tour to Lumbini. It will be an 8-day long trip around major Buddhist attraction sites.",
-      "We will kick off our tour from Kathmandu by visiting the attraction sites within the valley. After that, we then head towards Pharping and its vicinity to visit its pilgrimages. We also have places like Patan, Bhaktapur, and the famous Manjushree Park as our destinations. On one of the days of the tour, our overnight stop will be Nagarkot. We will visit Namobuddha and Panauti on the outskirts of town. They are a must-visit site among significant Buddhist attraction sites. After that, we will head to the birthplace of Buddha, Lumbini. A short tour of pilgrimage sites in Lumbini, and then we return to Kathmandu and mark the end of the trip.",
-      "The trip will be brief and very suitable for a short family gateway. You need not put much physical effort or plan your itineraries as we do it for you. Just book your package and enjoy the cultural and religious adventure that this tour has in store for you",
+      "Everest Base Camp Helicopter tour is the easiest way to confront the highest peak of the world, Mt. Everest (8848m). This short trip will also take you to the topmost base camp in the world i.e. Everest Base Camp itself along with famous vantage points like Kala Patthar (5565m).",
+      "Treks like Everest Base Camp will take a minimum of 13 days for exploration. Plus the trek is strenuous and you have to look after various factors like acclimatization. Thus, the EBC Helicopter Tour is the right option for avoiding these hurdles. You will reach the destined point in no time without going through any physical and climatic extremities.",
+      "You can spot about 20 highest peaks of East Nepal. You can locate the peaks (>8000m) like Everest (8848m), Cho Oyu (8201m), Shisha Pangma (8013m), Pumori (8171m), and Lhotse (8516m). These soaring peaks, with only 20 miles from your window, look magical. Above the horizon, you will forget about all kinds of crowd & chaos. All you do is delve deep into the serenity of beautiful Himalayas.",
     ],
     itinerary: [
       "Visit Swayambhunath, Kathmandu Durbar Square, and nearby Buddhist viharas",
@@ -141,7 +149,7 @@ export const Trip = [
   {
     tripId: 3,
     tripName: "Kathmandu and Pokhara Tour",
-    image: lumbini,
+    image: pokhara,
     days: 8,
     tripDetails: {
       accomodation: "Hotel/Lodge",
@@ -179,7 +187,7 @@ export const Trip = [
   {
     tripId: 4,
     tripName: "Everest Base Camp Trek",
-    image: lumbini,
+    image: everest,
     days: 8,
     tripDetails: {
       accomodation: "Hotel/Lodge",
@@ -217,7 +225,7 @@ export const Trip = [
   {
     tripId: 5,
     tripName: "Lobuche East Peak Climbing",
-    image: lumbini,
+    image: labuche,
     days: 8,
     tripDetails: {
       accomodation: "Hotel/Lodge",
