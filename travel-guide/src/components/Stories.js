@@ -8,13 +8,14 @@ import {
   CardGroup,
   Card,
 } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 // import { elephantSafari } from "../asset/logic";
 import { chitwan, kathmandu, pokhara, everest } from "../asset/logic";
 
-import { stories } from "../data";
+import { Trip } from "../data";
 
 const Stories = () => {
-  console.log(stories);
+  const navigate = useNavigate();
   // Function to generate a random number between min (inclusive) and max (exclusive)
   const getRandomNumber = (min, max) =>
     Math.floor(Math.random() * (max - min) + min);
@@ -22,8 +23,12 @@ const Stories = () => {
   // Selecting four random objects from the array
   const randomObjects = Array.from(
     { length: 3 },
-    () => stories[getRandomNumber(0, stories.length)]
+    () => Trip[getRandomNumber(0, Trip.length)]
   );
+
+  const handleClick = (item) => {
+    navigate("/blog" + "?id=" + item.tripId);
+  };
   return (
     <Container>
       <Row className="fw-bold">
@@ -60,12 +65,14 @@ const Stories = () => {
         </Col> */}
         {/* <Col> */}
         {/* <Row className="g-2"> */}
-        {randomObjects.map((item) => (
-          <Col xs={12} md={4} key={item.id}>
+        {randomObjects.map((item, index) => (
+          <Col xs={12} md={4} key={index}>
             <Card>
               <Card.Img src={item.image} alt="Chitwan National Park" />
               <Card.Body>
-                <Card.Title>{item.title}</Card.Title>
+                <Card.Title onClick={() => handleClick(item)}>
+                  <a>{item.tripName}</a>
+                </Card.Title>
                 {/* <Card.Text>{item.description}</Card.Text> */}
               </Card.Body>
             </Card>

@@ -11,13 +11,13 @@ const Menu = () => {
   return (
     <Navbar className="navbar-top" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <h4>Explore & Trek In Nepal</h4>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto fw-bold  pe-2">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#link">Tour</Nav.Link>
             <Nav.Link href="#about">Activity</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
